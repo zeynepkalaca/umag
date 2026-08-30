@@ -1,0 +1,133 @@
+:root {
+    --bg-dark: #121212;
+    --text-light: #e0e0e0;
+    --accent-red: #c92a2a;
+    --border-color: #333333;
+    --font-serif: 'Georgia', serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    font-family: var(--font-serif);
+    line-height: 1.9;
+    font-size: 1.1rem;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(180deg, rgba(0,0,0,0.8) 0%, rgba(18,18,18,1) 100%);
+    border-bottom: 1px solid var(--border-color);
+}
+
+.sub-title {
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    letter-spacing: 3px;
+    color: var(--accent-red);
+    display: block;
+    margin-bottom: 15px;
+}
+
+.hero-section h1 {
+    font-size: 2.8rem;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+
+.hero-intro {
+    font-size: 1.2rem;
+    color: #aaa;
+    max-width: 600px;
+    margin: 0 auto 30px auto;
+}
+
+.scroll-down-btn {
+    color: var(--text-light);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+}
+
+.scroll-down-btn:hover {
+    border-color: var(--accent-red);
+    color: var(--accent-red);
+}
+
+/* Story Blocks */
+.story-block {
+    padding: 100px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.story-date {
+    font-family: sans-serif;
+    font-size: 0.85rem;
+    color: var(--accent-red);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.story-block h2 {
+    font-size: 2.2rem;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.quote {
+    border-left: 3px solid var(--accent-red);
+    padding-left: 20px;
+    margin: 40px 0;
+    font-style: italic;
+    color: #cccccc;
+    font-size: 1.3rem;
+}
+
+.story-card-link {
+    background: #1a1a1a;
+    border: 1px solid var(--border-color);
+    padding: 25px;
+    border-radius: 6px;
+    margin-top: 30px;
+}
+
+.btn-story {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--accent-red);
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+/* Footer */
+.site-footer {
+    padding: 40px 0;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #666;
+    font-family: sans-serif;
+}
