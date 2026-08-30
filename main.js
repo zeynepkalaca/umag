@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             playBtn.textContent = '▶ Dinle';
         }
     });
-
+    
     // İlerleme Çubuğunu Güncelleme
     audio.addEventListener('timeupdate', () => {
         const progressPercent = (audio.currentTime / audio.duration) * 100;
