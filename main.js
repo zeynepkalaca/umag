@@ -45,3 +45,28 @@ document.addEventListener('DOMContentLoaded', () => {
         progressBar.style.width = '0%';
     });
 });
+document.addEventListener('DOMContentLoaded', () => {
+    // Page Fade-In on Load
+    document.body.classList.remove('fade-out');
+
+    // Handle Page Transition for Links
+    const links = document.querySelectorAll('a[href]');
+
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            const href = link.getAttribute('href');
+
+            // Skip anchor links (#) or external links (_blank)
+            if (href.startsWith('#') || link.target === '_blank' || href.startsWith('javascript:')) {
+                return;
+            }
+
+            e.preventDefault();
+            document.body.classList.add('fade-out');
+
+            setTimeout(() => {
+                window.location.href = href;
+            }, 500); // Matches the 0.5s CSS transition timing
+        });
+    });
+});
